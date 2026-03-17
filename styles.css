@@ -3,8 +3,8 @@
   --surface: rgba(255, 255, 255, 0.06);
   --text: #f5efe6;
   --muted: #c5b8a8;
-  --accent: #ff7a1a;
-  --accent-strong: #ff4d00;
+  --accent: #8d23ff;
+  --accent-strong: #f1a4ff;
   --shadow: 0 28px 70px rgba(0, 0, 0, 0.42);
 }
 
@@ -18,8 +18,8 @@ body {
   font-family: "Space Grotesk", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(255, 122, 26, 0.22), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(255, 77, 0, 0.18), transparent 30%),
+    radial-gradient(circle at top left, rgba(190, 26, 255, 0.22), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(230, 0, 255, 0.18), transparent 30%),
     linear-gradient(135deg, #05070b 0%, var(--bg) 55%, #171d26 100%);
 }
 
@@ -47,8 +47,8 @@ body {
 h1 {
   margin: 0;
   font-family: "Archivo Black", sans-serif;
-  font-size: clamp(3.75rem, 4vw, 7.25rem);
-  line-height: 0.92;
+  font-size: clamp(3rem, 3vw, 7.25rem);
+  line-height: 1;
   letter-spacing: -0.035em;
   text-wrap: balance;
   color: transparent;
@@ -65,7 +65,7 @@ h1 {
   background-size: 220% auto;
   background-clip: text;
   -webkit-background-clip: text;
-  animation: headline-shimmer 4.5s linear infinite;
+  /* animation: headline-shimmer 4.5s linear infinite; */
 }
 
 .description {
@@ -96,6 +96,7 @@ h1 {
 .cta:focus-visible {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 34px 80px rgba(0, 0, 0, 0.5);
+  color:#f5efe6;
 }
 
 .hero-visual {
@@ -109,7 +110,7 @@ h1 {
   width: 80%;
   height: 80%;
   border-radius: 2rem;
-  background: linear-gradient(135deg, rgba(255, 122, 26, 0.22), rgba(255, 77, 0, 0.34));
+  background: linear-gradient(135deg, rgba(209, 26, 255, 0.22), rgba(217, 0, 255, 0.34));
   filter: blur(14px);
   z-index: 0;
 }
